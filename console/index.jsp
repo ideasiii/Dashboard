@@ -87,47 +87,32 @@
 
 			<div class="sidebar_box">
 
-				<h2>Announcements</h2>
+				<h2>Select Device</h2>
 
 				<div class="news_box">
-					<a href="#">Fusce sit amet nunc lectus, at pretium augue. Pellentesque tortor felis.</a>
-					<p class="post_info">
-						Posted by <a href="#">Admin</a> on <span>April 30, 2048</span>
-					</p>
+					<select name="device_list" style="width: 200px;">
+						<option value="11111">Volvo</option>
+						<option value="22222">Saab</option>
+						<option value="33333">Fiat</option>
+						<option value="44444">Audi</option>
+					</select>
 				</div>
 
-				<div class="news_box">
-					<a href="#">Integer imperdiet, justo ut venenatis vehicula, magna mi placerat felis.</a>
-					<p class="post_info">
-						Posted by <a href="#">Admin</a> on <span>April 22, 2048</span>
-					</p>
-				</div>
-
-				<div class="news_box">
-					<a href="#">Sed justo dolor, convallis at, vestibulum vitae, elementum eu, pede.</a>
-					<p class="post_info">
-						Posted by <a href="#">Admin</a> on <span>April 14, 2048</span>
-					</p>
-				</div>
-
+				<h2>Date</h2>
+				<div class="news_box"></div>
+				<input type="button" value="Query" align="right"></input>
 			</div>
+			<!-- end  sidebar_box-->
+
 			<div class="sidebar_box_bottom"></div>
 
+			<!-- 
 			<div class="sidebar_box">
-
-				<h2>Newsletter</h2>
-
-				<form action="#" method="get">
-					<label>Please enter your email address to subscribe our newsletter.</label> <input type="text" value="" name="username" size="10" id="input_field" title="usernmae" /> <input
-						type="submit" name="login" value="Subscribe" alt="login" id="submit_btn" title="Login"
-					/>
-				</form>
-
+				<h2>Date</h2>
 				<div class="cleaner"></div>
-
 			</div>
 			<div class="sidebar_box_bottom"></div>
-
+-->
 		</div>
 		<!-- end of sidebar -->
 
