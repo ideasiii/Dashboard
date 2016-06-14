@@ -1,5 +1,20 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" session="false"%>
+<%@ page import="sdk.ideas.Common"%>
+<%@ page import="sdk.ideas.More"%>
+<%@ page import="sdk.ideas.StringUtility"%>
+<%
+	final String strToken = request.getParameter(Common.USER_TOKEN);
+	More more = new More();
+	boolean bLogined = false;
 
+	if (null != strToken && !strToken.trim().equals("null") && StringUtility.isValid(strToken)) {
+		bLogined = true;
+	}
+
+	final String strHostUrl = request.getRequestURL().toString(); //http://140.92.142.158/dashboard/console/rawdata.jsp 
+	final String uri = request.getRequestURI(); ///dashboard/console/rawdata.jsp 
+	final String pageName = uri.substring(uri.lastIndexOf("/") + 1);
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,7 +25,9 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
+<%out.println(strToken); %>
+<%out.println(strHostUrl); %>
+<%out.println(uri); %>
 	<!--  Contact Modal -->
 	<div id="modalContact" class="modal">
 		<!-- Modal content -->
@@ -72,9 +89,9 @@
 		<div id="templatemo_menu">
 
 			<ul>
-				<li><span href="#" class="current">Raw Data</span></li>
-				<li><span href="#">Analysis</span></li>
-				<li><span href="#">Contact</span></li>
+				<li><span class="current">Raw Data</span></li>
+				<li><span>Analysis</span></li>
+				<li><span>Contact</span></li>
 			</ul>
 
 		</div>
