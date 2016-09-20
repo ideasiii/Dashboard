@@ -11,5 +11,7 @@
 	<classpathentry kind="lib" path="/data/opt/tomcat/lib/jsp-api.jar"/>
 	<classpathentry kind="lib" path="/data/opt/tomcat/lib/servlet-api.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsp"/>
+	<classpathentry kind="lib" path="/data/opt/tomcat/lib/mongo-java-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="/data/opt/tomcat/lib/json-org.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
